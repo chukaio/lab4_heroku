@@ -13,7 +13,7 @@ export class Average {
     }
 
     Sum(){
-        this.sum=Number.parseInt(this.firstDate.toString())+Number.parseInt(this.secondDate.toString());
+        this.sum=Number.parseFloat(this.firstDate.toString())+Number.parseFloat(this.secondDate.toString());
     }
 
     Average(){
