@@ -1,0 +1,18 @@
+<router-outlet></router-outlet>
+
+<h1>{{title}}</h1>
+
+<h3>Ingrese primer edad</h3>
+<input type="text" [(ngModel)]="average.firstDate">
+<br>
+<h3>Ingrese segunda edad</h3>
+<input type="text" [(ngModel)]="average.secondDate">
+<br>
+<br>
+<input type="button" value="Calcular Suma" (click)="average.Sum()">
+<input type="text" [(ngModel)]="average.sum">
+<br>
+<input type="button" value="Calcular Promedio" (click)="average.Average()">
+<input type="text"[(ngModel)]="average.average">
+<br>
+<input type="button" value="Limpiar cuandros de texto" (click)="average.Clean()">
